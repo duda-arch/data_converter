@@ -11,8 +11,8 @@
 `$ Converts a 32-bit integer to Big Endian format.`
 - **HEX_TWO_STRING**: Converte um valor hexadecimal em sua representação string.`$ Converts a hexadecimal value to its string representation.`
 
-		`$ pip freeze < requeriments.txt`
-		`$ python3 main.py`
+		$ pip freeze < requeriments.txt
+		$ python3 main.py
 
 
 ![](https://raw.githubusercontent.com/duda-arch/data_converter/main/assets/version1-0.png)

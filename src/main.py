@@ -1,7 +1,6 @@
 from pathlib import Path
 from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage
-
-from data_converter.src.classConversion import Conversions
+from src.classConversion import Conversions
 
 
 OUTPUT_PATH = Path(__file__).parent

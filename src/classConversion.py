@@ -30,6 +30,8 @@ class Conversions:
         except Exception as err:
             return str(err)
             
+
+            
     @staticmethod
     def INT16_BIG_ENDIAN_AB(valor):
         try:
@@ -62,3 +64,25 @@ class Conversions:
            return bytes.fromhex(valor).decode('utf-8')
         except Exception as err:
             return str(err)
+        
+
+
+
+def INT16_BIG_ENDIAN_AB(hexval):
+    hexval = hexval.replace(' ','') if len(hexval) >= 2 and type(hexval) == str else hexval
+    bits = 16
+    val = int(hexval, bits)
+    if val & (1 << (bits-1)):
+        val & (1 << (bits-1))
+        val -= 1 << bits
+    return val
+
+
+try: # INT16 - Big Endian (AB)
+    register = '06e5 d31c'
+    v = INT16_BIG_ENDIAN_AB(register)
+    print(v)
+except Exception as err:
+    print(err)                        
+
+

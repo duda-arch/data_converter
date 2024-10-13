@@ -29,4 +29,4 @@
 
 ![](https://raw.githubusercontent.com/duda-arch/data_converter/main/assets/version1-0.png)
 
-`$ Copyright © [2024] Duda-Arch.`
+`$  [2024] Duda-Arch.`

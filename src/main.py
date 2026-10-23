@@ -4,7 +4,7 @@ from src.classConversion import Conversions
 
 
 OUTPUT_PATH = Path(__file__).parent
-ASSETS_PATH = OUTPUT_PATH / Path(r"/home/duda-arch/Área de trabalho/duda-arch/data_converter/assets")
+ASSETS_PATH = OUTPUT_PATH.resolve().parent / "assets"
 
 
 def relative_to_assets(path: str) -> Path:
